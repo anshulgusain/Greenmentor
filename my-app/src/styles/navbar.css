@@ -1,0 +1,56 @@
+.parent{
+    background-color: purple;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    font-size: 28px;
+ 
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+    position: relative;
+}
+
+.heading{
+    display: flex;
+
+    color: white;
+    align-items: center;
+    margin-left: 20px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin-right: 500px;
+    /* border: 1px solid black; */
+    padding: 20px;
+    font-size: 42px;
+    font-weight: 700;
+   
+   
+}
+
+.menu{
+    color: white;
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    padding: 17px;
+}
+
+.items{
+    line-height: 40px;
+    margin-right: 1rem;
+}
