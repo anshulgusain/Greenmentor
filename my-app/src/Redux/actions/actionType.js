@@ -1,0 +1,6 @@
+export const CREATE_TASK="CREATE_TASK"
+export const FAIL_CREATE_TASK="FAIL_CREATE_TASK"
+export const FETCH_TASK="FETCH_TASK"
+export const EDIT_TASK="EDIT_TASK"
+
+

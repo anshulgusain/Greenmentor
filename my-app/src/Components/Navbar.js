@@ -27,13 +27,9 @@ const Navbar=()=>{
                     Edit
                 </Link>
             </li>
+           
             <li className="item">
                 <Link to= "/" className="links">
-                    About
-                </Link>
-            </li>
-            <li className="item">
-                <Link to= "/login" className="links">
                     Login
                 </Link>
             </li>

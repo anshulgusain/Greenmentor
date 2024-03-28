@@ -1,17 +1,19 @@
 // ALL IMPORTS
 
 const express =require("express")
-const { connection } = require("mongoose")
+const { connection } = require("./connection/connect")
+
 const { UserModel } = require("./models/UserModel")
 const bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
 const { TaskModel } = require("./models/TaskModel");
 const { authenticate } = require("./middlewares/authenticate");
-
+const cors = require('cors');
 // All IMPORTS END
 
 const app=express()
-app.use(express.json)
+app.use(express.json())
+app.use(cors())
 
 
 
@@ -30,7 +32,7 @@ app.post("/signup",async(req,res)=>{
     })
 })
 
-app.post("/signup",async(req,res)=>{
+app.post("/login",async(req,res)=>{
     const {email,password}=req.body
     const user=await UserModel.findOne({email})
     const hash=user.password
@@ -53,7 +55,7 @@ app.post("/signup",async(req,res)=>{
 
 // CRUD API START
 app.use(authenticate)
-app.get("task",async(req,res)=>{
+app.get("/task",async(req,res)=>{
     const data=await TaskModel.find(req.query)
     res.send({data})
 })

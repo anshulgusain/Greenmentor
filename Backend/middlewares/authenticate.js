@@ -6,6 +6,7 @@ jwt.verify(token, 'shhhhh', function(err, decoded) {
     if(err){
         console.log("Invalid token")
         res.send("Token in invalid")
+       next()
     }else{
         const {userid}=decoded
         req.userid=userid
