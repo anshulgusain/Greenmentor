@@ -15,7 +15,7 @@ const Home=()=>{
 console.log(data)
 
     return<>
-    <button onClick={search}>Load Task</button>
+    {/* <button onClick={search}>Load Task</button> */}
     {
         
         data.map((ele)=>(
