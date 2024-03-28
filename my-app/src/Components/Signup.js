@@ -25,7 +25,7 @@ const Signup=()=>{
     const response=await axios.post("http://localhost:8080/signup",user)
      console.log("Signup Successfull")
      alert("Signed Up Successfully",response.data)
-     navigate('/login')
+     navigate('/')
  }catch(err){
     console.log(err)
     setError(error)
