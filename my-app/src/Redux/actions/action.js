@@ -35,10 +35,10 @@ import { CREATE_TASK,EDIT_TASK,FAIL_CREATE_TASK ,FETCH_TASK} from './actionType'
             },
         })
         // const data=await response.json();
-        console.log(response.data)
+        // console.log(response.data)
         dispatch({
             type:FETCH_TASK,
-            payload:response.data
+            payload:response
         })
     }catch(err){
         console.log(err)

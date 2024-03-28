@@ -1,0 +1,39 @@
+.task_parent{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 30px;
+    gap: 38px;
+}
+
+.task_container{
+    padding: 10px;
+    border:  1px solid gray;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px gray;
+}
+.task_title{
+  font-size: 36px;
+  font-weight: 600;
+}
+.task_description{
+font-size: 18px;
+height: 70px;
+/* border:  1px solid gray; */
+margin-bottom: 10px;
+}
+.buttons{
+
+display: flex;
+/* justify-content: space-between; */
+/* margin-left: 60px; */
+/* margin-right: 40px; */
+justify-content: space-between;
+
+}
+.buttons button{
+    background-color: purple;
+color: white;
+padding: 6px;
+border-radius: 5px;
+
+}

@@ -16,8 +16,8 @@ switch (action.type) {
             return {...state,loading:false,error:action.payload}
         
             case FETCH_TASK:
-                console.log(action.payload)
-                return {...state,loading:false,error:action.payload}   
+                // console.log(action.payload)
+                return {...state,loading:false,data:action.payload}   
     default:
         return state;
 }
